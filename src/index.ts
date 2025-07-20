@@ -13,6 +13,6 @@
 
 export default {
 	async fetch(request, env, ctx): Promise<Response> {
-		return new Response('Hello World!');
+		return Response.redirect('https://abysswalker.org', 301);
 	},
 } satisfies ExportedHandler<Env>;
